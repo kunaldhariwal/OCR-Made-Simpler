@@ -7,5 +7,4 @@ This work is the Enhanced version of @longhowlam's work for better user experien
 
 <br>  **Wordcloud** package to generate the word cloud.
 
-
-I have included one simple image too!
+<br>I have included one simple image too!
