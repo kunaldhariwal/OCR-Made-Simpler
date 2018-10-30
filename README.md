@@ -8,4 +8,4 @@
 
 <br>I have included one sample image too!
 
-In the next version i would integrate support for pdf too.
+In the next version, i would integrate support for pdf too.
