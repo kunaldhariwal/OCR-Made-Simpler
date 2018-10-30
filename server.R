@@ -29,8 +29,7 @@ shinyServer(function(input, output, session) {
     list(
       h4("This shiny app uses the tesseract R package to perform OCR on an uploaded image."), 
       h4("The extracted text is then used to form a wordcloud image, (English) stopwords can be removed."),
-      h4("If no image is selected a default OCR test image is used."),
-      h4(" P.S- Inspired by Longhow Lam's work!")
+      h4("If no image is selected a default OCR test image is used.")
     )
     
   })
@@ -64,22 +63,6 @@ shinyServer(function(input, output, session) {
       
     cat(extractedText())
   })
-  
-  output$sentences = renderDataTable({
-    
-    text = extractedText()
-    tmp = tokenize(text, what = "sentence")
-    DT::datatable(  
-      data.frame(
-        sentence = 1:length(tmp[[1]]),
-        text = tmp[[1]]
-      ),
-      rownames = FALSE
-      
-    )
-    
-  })
-  
   
   output$cloud = renderPlot({
     
