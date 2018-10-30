@@ -6,6 +6,6 @@
 
 <br>  **Wordcloud** package to generate the word cloud.
 
-<br>I have included one simple image too!
+<br>I have included one sample image too!
 
 In the next version i would integrate support for pdf too.
